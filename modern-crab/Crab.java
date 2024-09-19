@@ -17,7 +17,9 @@ public class Crab extends Actor
     {
         moveAndTurn();
         eat();
-        
+        if (isGameWon()) {
+            transitionToGameWonWorld();
+        }
     }
 
     /**
@@ -45,5 +47,28 @@ public class Crab extends Actor
             world.removeObject(worm);
             Greenfoot.playSound("eating.wav");
         }
+    }
+
+    /**
+     * 
+     */
+    public boolean isGameWon()
+    {
+        World world = getWorld();
+        if (world.getObjects(Worm.class).isEmpty()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * 
+     */
+    public void transitionToGameWonWorld()
+    {
+        World gameWonWorld =  new  GameWonWorld();
+        Greenfoot.setWorld(gameWonWorld);
     }
 }
