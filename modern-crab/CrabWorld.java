@@ -18,6 +18,7 @@ public class CrabWorld extends World
     {
         super(560, 560, 1);
         prepare();
+        bgMusic();
     }
 
     /**
@@ -44,5 +45,13 @@ public class CrabWorld extends World
         addObject(worm7, 338, 491);
         Lobster lobster =  new  Lobster();
         addObject(lobster, 417, 126);
+    }
+
+    /**
+     * 
+     */
+    public void bgMusic()
+    {
+        Greenfoot.playSound("Voicy_Kirby Game.wav");
     }
 }

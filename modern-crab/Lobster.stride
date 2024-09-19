@@ -74,7 +74,6 @@
                     <ifStatements>
                         <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
                         <call expression="world.removeObject(crab)" expression-java="world.removeObject(crab)" enable="true"/>
-                        <call expression="Greenfoot.playSound(&quot;game-over-38511.wav&quot;)" expression-java="Greenfoot.playSound(&quot;game-over-38511.wav&quot;)" enable="true"/>
                     </ifStatements>
                 </if>
             </body>
@@ -89,7 +88,6 @@
                 <if condition="worm!=null" condition-java="worm != null" enable="true">
                     <ifStatements>
                         <call expression="getWorld().addObject(new Lobster(),getX(),getY())" expression-java="getWorld().addObject( new Lobster(), getX(), getY())" enable="true"/>
-                        <call expression="Greenfoot.playSound(&quot;metal-pipe-230698.wav&quot;)" expression-java="Greenfoot.playSound(&quot;metal-pipe-230698.wav&quot;)" enable="true"/>
                         <call expression="getWorld().removeObject(worm)" expression-java="getWorld().removeObject(worm)" enable="true"/>
                     </ifStatements>
                 </if>
@@ -118,6 +116,7 @@
             <body>
                 <variable type="World" type-java="World" name="gameOverWorld" value="new GameOverWorld()" value-java=" new GameOverWorld()" enable="true"/>
                 <call expression="Greenfoot.setWorld(gameOverWorld)" expression-java="Greenfoot.setWorld(gameOverWorld)" enable="true"/>
+                <call expression="Greenfoot.playSound(&quot;Voicy_Michael Jordan_ Stop It, Get Some Help.wav&quot;)" expression-java="Greenfoot.playSound(&quot;Voicy_Michael Jordan_ Stop It, Get Some Help.wav&quot;)" enable="true"/>
             </body>
         </method>
     </methods>

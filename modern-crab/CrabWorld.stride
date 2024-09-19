@@ -16,6 +16,7 @@
             <delegate target="super" params="560,560,1" params-java="560, 560, 1"/>
             <body>
                 <call expression="prepare()" expression-java="prepare()" enable="true"/>
+                <call expression="bgMusic()" expression-java="bgMusic()" enable="true"/>
             </body>
         </constructor>
     </constructors>
@@ -44,6 +45,14 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(worm7,338,491)" expression-java="addObject(worm7, 338, 491)" enable="true"/>
                 <variable type="Lobster" type-java="Lobster" name="lobster" value="new Lobster()" value-java=" new Lobster()" enable="true"/>
                 <call expression="addObject(lobster,417,126)" expression-java="addObject(lobster, 417, 126)" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="bgMusic" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="Greenfoot.playSound(&quot;Voicy_Kirby Game.wav&quot;)" expression-java="Greenfoot.playSound(&quot;Voicy_Kirby Game.wav&quot;)" enable="true"/>
             </body>
         </method>
     </methods>

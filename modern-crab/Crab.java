@@ -70,5 +70,6 @@ public class Crab extends Actor
     {
         World gameWonWorld =  new  GameWonWorld();
         Greenfoot.setWorld(gameWonWorld);
+        Greenfoot.playSound("");
     }
 }

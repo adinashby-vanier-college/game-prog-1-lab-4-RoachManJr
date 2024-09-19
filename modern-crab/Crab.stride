@@ -79,6 +79,7 @@
             <body>
                 <variable type="World" type-java="World" name="gameWonWorld" value="new GameWonWorld()" value-java=" new GameWonWorld()" enable="true"/>
                 <call expression="Greenfoot.setWorld(gameWonWorld)" expression-java="Greenfoot.setWorld(gameWonWorld)" enable="true"/>
+                <call expression="Greenfoot.playSound(&quot;&quot;)" expression-java="Greenfoot.playSound(&quot;&quot;)" enable="true"/>
             </body>
         </method>
     </methods>

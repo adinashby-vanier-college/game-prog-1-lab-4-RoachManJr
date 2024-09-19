@@ -64,7 +64,6 @@ public class Lobster extends Actor
         if (crab != null) {
             World world = getWorld();
             world.removeObject(crab);
-            Greenfoot.playSound("game-over-38511.wav");
         }
     }
 
@@ -77,7 +76,6 @@ public class Lobster extends Actor
         World world = getWorld();
         if (worm != null) {
             getWorld().addObject( new  Lobster(), getX(), getY());
-            Greenfoot.playSound("metal-pipe-230698.wav");
             getWorld().removeObject(worm);
         }
     }
@@ -103,5 +101,6 @@ public class Lobster extends Actor
     {
         World gameOverWorld =  new  GameOverWorld();
         Greenfoot.setWorld(gameOverWorld);
+        Greenfoot.playSound("Voicy_Michael Jordan_ Stop It, Get Some Help.wav");
     }
 }
